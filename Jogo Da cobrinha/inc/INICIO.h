@@ -4,7 +4,7 @@ void INICIO(celula vet[]){
     for(int i = 0; i < 10; i++){
         for(int j = 0; j < 30; j++){
             vet[ (i*30) + j].corpo = '|';
-            vet[ (i*30) + j].ordem = 0;
+            vet[ (i*30) + j].ordem = -1;
             vet[ (i*30) + j].direcao_do_rabo = 0;
         }
     }    

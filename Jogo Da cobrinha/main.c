@@ -48,8 +48,8 @@ int main(){
             system("clear");
             direcao_atual = direcao;
 
-            i = BUSCA_I(vet, 'O', 0);
-            j = BUSCA_J(vet, 'O', 0);
+            i = BUSCA_I(vet, 0);
+            j = BUSCA_J(vet, 0);
 
             if(direcao_atual == direcao_anterior){
                 verific(vet, i, j, 'O', direcao_atual);
@@ -93,9 +93,12 @@ int main(){
                 break;
             }
 
-            i = BUSCA_I(vet, 'o', 1);
-            j = BUSCA_J(vet, 'o', 1);
-            verific(vet, i, j, 'o', direcao_anterior);
+            i = BUSCA_I(vet, 1);
+            j = BUSCA_J(vet, 1);
+            verific(vet, i, j, 'o', vet[(i*30)+j].direcao_do_rabo);
+            i = BUSCA_I(vet, 1);
+            j = BUSCA_J(vet, 1);
+            vet[(i*30)+j].direcao_do_rabo = direcao_atual;
             direcao_anterior = direcao_atual;
 
             if(vida == 2 && flag_se_tamanho_aumentou == 0)aumentar(vet);

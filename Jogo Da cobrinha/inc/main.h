@@ -13,7 +13,6 @@
 #include "ESQUERDA.h"
 #include "INICIO.h"
 #include "SPAW.h"
-#include "DESESPAW.h"
 #include "PRINT.h"
 #include "RECEBER.h"
 

@@ -5,7 +5,7 @@
 // TAL COISA
 void spaw(celula vet[]){
     srand(time(NULL));
-    int i = BUSCA_I(vet, 'C', 301);
+    int i = BUSCA_I(vet, 301);
     if(i == -1){
         int linha = rand() % 10;
         int coluna = rand() % 30;

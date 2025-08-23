@@ -6,8 +6,8 @@
 
 void aumentar(celula vet[]){
 
-    int i = BUSCA_I(vet, 'o', 1);
-    int j = BUSCA_J(vet, 'o', 1);
+    int i = BUSCA_I(vet, 1);
+    int j = BUSCA_J(vet, 1);
     char direcao = vet[  (i*30) + j  ].direcao_do_rabo;
     if(direcao == 'w'){
         if(i != 9){
