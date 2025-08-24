@@ -111,7 +111,7 @@ int main(){
             }
 
             if(vida == 0){
-                printf("PELO AMOR DE DEUS, VOCE FEZ A COBRINHA COMER COCO\n");
+                printf("PELO AMOR DE DEUS, VOCE FEZ A COBRINHA SE COMER\n");
                 printf("ESPERE 5 SEGUNDOS\n");
                 sleep(5);
                 break;
@@ -119,11 +119,11 @@ int main(){
 
             mover_rabo(vet);
 
+            aumentar(vet, &tamanho_da_cobrinha);
+
             atualizar_direcao_do_rabo(vet);
 
             direcao_anterior = direcao_atual;
-
-            aumentar(vet, &tamanho_da_cobrinha);
 
         }
 
